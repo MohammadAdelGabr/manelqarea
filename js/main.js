@@ -66,5 +66,4 @@ document.querySelector(".voice .record").addEventListener("click", () => {
   document.querySelector(".how-to-work .voice .record").classList.remove("ze");
   document.querySelector(".how-to-work .voice .mic").classList.add("ze");
   y.stopListening();
-  console.log("stop");
 });
