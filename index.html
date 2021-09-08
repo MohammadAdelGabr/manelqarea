@@ -1,100 +1,160 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>من القارئ</title>
-    <style> 
-        button {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            border-radius: 50%;
-            cursor:pointer;
-            width:150px;
-        }
-    </style>
-    <script src="https://kit.fontawesome.com/452e7df956.js" crossorigin="anonymous"></script>
+    <!-- Css Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
-<body style="display: flex; flex-direction: column; align-items: center; height: 100%;justify-content:center;overflow:hidden">
-    <div style="display:flex;flex-direction:column;width:200px;align-items:center">
-        <button type="button" onclick="init()"><i class="fas fa-microphone fa-6x"></i>    </button>
-
-        <h1 id="readerName"></h1>
+<body>
+    <!-------------------------- Start Code -------------------------->
+    <!-- Logo -->
+    <div class="logo">
+        <div class="container">
+            <div class="logo-content">
+                <h3>من القارئ</h3>
+                <p>تعرف على إسم قارئ القرآن من خلال سماع صوته</p>
+            </div>
+        </div>
     </div>
+    <!-- How to work -->
+    <div class="how-to-work">
+        <div class="container">
+            <div class="work_content">
+                <p>
+                    يقوم الموقع بعرض إسم الشيخ قارئ القرآن من القراء الموجودين لدى الموقع عن طريق الإستماع لصوت الشيخ من خلال الميكروفون وعرض اسمه
+                </p>
+                <p>
+                    <span>01.</span>
+                    إضغط على زر الميكروفون لبدأ السمع . برجاء السماح للمتصفح بأن يستخدم هذا الموقع الميكروفون
+                </p>
+                <p>
+                    <span>02.</span>
+                    إبدأ بتشغيل القرأن ليبدأ الموقع بسماع الصوت
+                </p>
+                <p>
+                    <span>03.</span>
+                    سيتم عرض اسم الشيخ اثناء التسجيل. وعند الإنتهاء سيتوقف الموقع عن السمع
+                </p>
+                <p>
+                    <span>*</span>
+                    الموقع لا يحتفظ بأي معلومة أو بيانات اثناء التسجيل او في اي مرحلة . يتم العمل على الصوت فقظ حال سماعه بدون الحفاظ عليه
+                </p>
+            </div>
+            <!-- Voice -->
+            <div class="voice">
+                <div class="mic ze">
+                    <svg version="1.1"
+                         id="Capa_1"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px"
+                         y="0px"
+                         viewBox="0 0 435.2 435.2"
+                         style="enable-background: new 0 0 435.2 435.2"
+                         xml:space="preserve">
+                    <g>
+                    <g>
+                    <path d="M356.864,224.768c0-8.704-6.656-15.36-15.36-15.36s-15.36,6.656-15.36,15.36c0,59.904-48.64,108.544-108.544,108.544
+                                c-59.904,0-108.544-48.64-108.544-108.544c0-8.704-6.656-15.36-15.36-15.36c-8.704,0-15.36,6.656-15.36,15.36
+                                c0,71.168,53.248,131.072,123.904,138.752v40.96h-55.808c-8.704,0-15.36,6.656-15.36,15.36s6.656,15.36,15.36,15.36h142.336
+                                c8.704,0,15.36-6.656,15.36-15.36s-6.656-15.36-15.36-15.36H232.96v-40.96C303.616,355.84,356.864,295.936,356.864,224.768z" />
+                </g>
+              </g>
+                    <g>
+                    <g>
+                    <path d="M217.6,0c-47.104,0-85.504,38.4-85.504,85.504v138.752c0,47.616,38.4,85.504,85.504,86.016
+                                c47.104,0,85.504-38.4,85.504-85.504V85.504C303.104,38.4,264.704,0,217.6,0z" />
+                </g>
+              </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+            </svg>
+                </div>
+                <div class="record">
+                    <svg id="Capa_1"
+                         enable-background="new 0 0 320 320"
+                         viewBox="0 0 320 320"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="m288 0h-256c-17.632 0-32 14.368-32 32v256c0 17.632 14.368 32 32 32h256c17.632 0 32-14.368 32-32v-256c0-17.632-14.368-32-32-32z" />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                    </svg>
+                </div>
+                <!-- Reader -->
+                <div class="reader">
+                    <h3>أحمد المحدمد</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reader List -->
+    <div class="reader-list">
+        <h3>القراء المتاحين</h3>
+        <div class="itms">
+            <div class='itm'>                   <div class='itm_content'>                       <p>أحمد بن علي العجمي   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>شيخ أبو بكر الشاطري   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>عبد الباسط عبد الصمد   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>عبد الرحمن السديس   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>عبد الله بصفر   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>علي الحذيفي   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>ماهر المعيقلي   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>محمد أيوب   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>محمد صديق المنشاوي   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>محمد محمود الطبلاوي   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>محمود خليل الحصري   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>محمود علي البنا   </div>               </div>
+            <div class='itm'>                   <div class='itm_content'>                       <p>مشاري راشد   </div>               </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <!--<a
+          href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=emailaddress@whatever.com"
+          target="_blank"
+          >emailaddress@whatever.com</a
+        >
+        <p>جميع الحقوق محفوظة</p>-->
+    </footer>
+
+    <!-------------------------- End Code -------------------------->
+    <!-- Js Files -->
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
-
-    <script type="text/javascript">
-        // more documentation available at
-        // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
-
-        // the link to your model provided by Teachable Machine export panel
-        const URL = "https://teachablemachine.withgoogle.com/models/u8er8X8d7/";
-
-        async function createModel() {
-            const checkpointURL = URL + "model.json"; // model topology
-            const metadataURL = URL + "metadata.json"; // model metadata
-
-            const recognizer = speechCommands.create(
-                "BROWSER_FFT", // fourier transform type, not useful to change
-                undefined, // speech commands vocabulary feature, not useful for your models
-                checkpointURL,
-                metadataURL);
-
-            // check that model and metadata are loaded via HTTPS requests.
-            await recognizer.ensureModelLoaded();
-
-            return recognizer;
-        }
-
-        async function init() {
-            const recognizer = await createModel();
-            const classLabels = recognizer.wordLabels(); // get class labels
-            const readerName = document.getElementById("readerName");
-            //for (let i = 0; i < classLabels.length; i++) {
-            //    labelContainer.appendChild(document.createElement("div"));
-            //}
-
-            // listen() takes two arguments:
-            // 1. A callback function that is invoked anytime a word is recognized.
-            // 2. A configuration object with adjustable fields
-            recognizer.listen(result => {
-                const scores = result.scores; // probability of prediction for each class
-                // render the probability scores per class
-                let maxvalue = 0;
-                let name = "";
-                for (let i = 0; i < classLabels.length; i++) {
-                    //const classPrediction = classLabels[i] + ": " + result.scores[i].toFixed(2);
-                    //labelContainer.childNodes[i].innerHTML = classPrediction;
-                    var r = result.scores[i].toFixed(2);
-
-                    if (r>0.75 && r> maxvalue) {
-                        maxvalue = r;
-                        name = classLabels[i];
-                    }
-
-                }
-
-                readerName.innerHTML = name;
-
-            }, {
-                includeSpectrogram: true, // in case listen should return result.spectrogram
-                probabilityThreshold: 0.75,
-                invokeCallbackOnNoiseAndUnknown: true,
-                overlapFactor: 0.50 // probably want between 0.5 and 0.75. More info in README
-            });
-
-            // Stop the recognition in 5 seconds.
-            // setTimeout(() => recognizer.stopListening(), 5000);
-        }
-    </script>
-
+    <script src="./js/main.js"></script>
 </body>
 </html>
-
